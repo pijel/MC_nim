@@ -70,10 +70,7 @@ class Perfectplayer:
     def move(self,stack):
         if stack == 1 or stack == 2 or stack == 3:
             return stack
-        if stack % 4 == 1:
-            return 1
-        if stack % 4 == 2:
-            return 2
-        if stack % 4 == 3:
-            return 3
+        if stack % 4 != 0:
+            return stack % 4
         return random.choice([1,2,3])
+    
