@@ -68,9 +68,6 @@ class Perfectplayer:
     def __init__(self):
         pass
     def move(self,stack):
-        if stack == 1 or stack == 2 or stack == 3:
-            return stack
         if stack % 4 != 0:
             return stack % 4
-        return random.choice([1,2,3])
-    
+        return random.choice([1,2,3])    
